@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+
+  <title>Антон Шишикин — Backend (Go) • Резюме</title>
+  <meta name="description" content="Антон Шишикин — Junior Backend-разработчик (Golang). Москва. Автоматизация, интеграции, CRM/ERP, Go-сервисы." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Антон Шишикин — Backend (Go) • Резюме" />
+  <meta property="og:description" content="Junior Backend (Golang). Проекты: мониторинг Маркета, интеграции CRM/ERP, автоматизация." />
+  <meta property="og:type" content="website" />
+  <!-- Если добавишь og.png в корень — раскомментируй -->
+  <!-- <meta property="og:image" content="./og.png" /> -->
+
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+
+<body>
+  <a class="skip" href="#content">Перейти к содержимому</a>
+
+  <header class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true">AS</span>
+        <span class="brand__text">Anton Shishikin</span>
+      </div>
+
+      <nav class="nav" aria-label="Навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#skills">Навыки</a>
+        <a href="#experience">Опыт</a>
+        <a href="#projects">Проекты</a>
+        <a href="#education">Образование</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Переключить тему">
+          <span class="icon" aria-hidden="true">◐</span>
+        </button>
+        <a class="btn btn--primary" href="#contact">Связаться</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__left">
+          <p class="kicker">Москва • открыт к стажировке / Junior</p>
+          <h1 class="hero__title">
+            Антон Шишикин
+            <span class="hero__subtitle">Junior Backend (Golang)</span>
+          </h1>
+
+          <p class="hero__desc">
+            Backend-разработка на Go, интеграции и автоматизация процессов.
+            Делал сервисы мониторинга (Яндекс Маркет), Telegram-уведомления, интеграции CRM/ERP (в т.ч. 1С),
+            умею собирать требования и доводить задачи до внедрения.
+          </p>
+
+          <div class="hero__chips" aria-label="Ключевые направления">
+            <span class="chip">Golang</span>
+            <span class="chip">REST API</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Парсинг</span>
+            <span class="chip">Интеграции</span>
+            <span class="chip">1С</span>
+          </div>
+
+          <div class="hero__cta">
+            <!-- TODO: вставь свою ссылку на PDF резюме, если сделаешь -->
+            <a class="btn btn--primary" href="#projects">Смотреть проекты</a>
+            <a class="btn btn--ghost" href="https://github.com/AntonShishikin" target="_blank" rel="noreferrer">
+              GitHub ↗
+            </a>
+          </div>
+
+          <dl class="hero__stats" aria-label="Ключевые факты">
+            <div class="stat">
+              <dt>Фокус</dt>
+              <dd>Backend • Automation • Integrations</dd>
+            </div>
+            <div class="stat">
+              <dt>Технологии</dt>
+              <dd>Go • SQL • JS • Swift • 1C</dd>
+            </div>
+            <div class="stat">
+              <dt>Английский</dt>
+              <dd>Базовый (чтение документации)</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="hero__right" aria-label="Карточка профиля">
+          <div class="card card--profile">
+            <div class="profile">
+              <div class="profile__avatar" aria-hidden="true">
+                <span>AS</span>
+              </div>
+
+              <div class="profile__meta">
+                <div class="profile__name">Антон Шишикин</div>
+                <div class="profile__role">Junior Backend (Golang)</div>
+                <div class="profile__loc">Москва</div>
+              </div>
+            </div>
+
+            <hr class="sep" />
+
+            <div class="kv">
+              <div class="kv__row">
+                <span class="kv__k">GitHub</span>
+                <a class="kv__v" href="https://github.com/AntonShishikin" target="_blank" rel="noreferrer">
+                  AntonShishikin
+                </a>
+              </div>
+
+              <!-- TODO: поменяй на свои реальные контакты -->
+              <div class="kv__row">
+                <span class="kv__k">Telegram</span>
+                <a class="kv__v" href="https://t.me/USERNAME" target="_blank" rel="noreferrer">@USERNAME</a>
+              </div>
+
+              <div class="kv__row">
+                <span class="kv__k">Email</span>
+                <a class="kv__v" href="mailto:you@example.com">you@example.com</a>
+              </div>
+            </div>
+
+            <div class="profile__actions">
+              <a class="btn btn--primary btn--block" href="#contact">Написать</a>
+              <button class="btn btn--ghost btn--block" id="copyContacts" type="button">
+                Скопировать контакты
+              </button>
+            </div>
+
+            <p class="note">
+              Доступен: стажировка / junior • Full-time / part-time • офис/гибрид/удалённо
+            </p>
+          </div>
+
+          <div class="card card--mini">
+            <div class="mini__title">Сильные стороны</div>
+            <ul class="mini__list">
+              <li>Интеграции и автоматизация “от требований до внедрения”</li>
+              <li>Практика Go-сервисов и ботов</li>
+              <li>Коммуникация с пользователями, ТЗ по ГОСТ</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Обо мне</h2>
+          <p>Коротко о том, что я делаю и что ищу.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>Кто я</h3>
+            <p>
+              Студент последнего курса РТУ МИРЭА (Программная инженерия, кафедра КИС).
+              Начал работать в 16 лет: web (fullstack), iOS, корпоративные миграции, Go-разработка и автоматизация.
+            </p>
+            <p>
+              Сейчас ищу место, где можно расти как backend-инженер: писать сервисы, API, работать с БД,
+              интеграциями и, со временем, highload.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Что я приношу</h3>
+            <ul class="list">
+              <li><b>Практический результат</b>: автоматизирую ручные процессы, уменьшаю ошибки и ускоряю работу.</li>
+              <li><b>Системное мышление</b>: понимаю требования бизнеса, умею фиксировать их в ТЗ.</li>
+              <li><b>Инженерный подход</b>: аккуратность, ответственность, работа “до продакшена”.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Навыки</h2>
+          <p>Стек и то, с чем мне комфортно работать.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <h3>Backend</h3>
+            <ul class="tags">
+              <li>Golang</li><li>REST</li><li>HTTP</li><li>Telegram Bot API</li>
+              <li>Парсинг</li><li>Сервисные задачи</li><li>Cron</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Данные</h3>
+            <ul class="tags">
+              <li>PostgreSQL</li><li>SQLite</li><li>SQL</li><li>История изменений</li>
+              <li>Экспорт/импорт</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Инженерия</h3>
+            <ul class="tags">
+              <li>Git</li><li>Linux</li><li>Docker (база)</li><li>Документация</li>
+              <li>ТЗ по ГОСТ</li><li>Сбор требований</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Дополнительно</h3>
+            <ul class="tags">
+              <li>JavaScript</li><li>Swift (iOS)</li><li>1C</li><li>Excel/R7 Office</li>
+              <li>Автоматизация офисных процессов</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Soft skills</h3>
+            <ul class="list">
+              <li>Коммуникация с заказчиком</li>
+              <li>Декомпозиция задач</li>
+              <li>Аккуратность и дисциплина</li>
+              <li>Ответственность за результат</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Что хочу усилить</h3>
+            <ul class="list">
+              <li>Проектирование микросервисов</li>
+              <li>Наблюдаемость: метрики/логи/трейсинг</li>
+              <li>Highload-паттерны и надежность</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Опыт</h2>
+          <p>Главное: что делал и какой был эффект.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item card">
+            <div class="timeline__top">
+              <h3>Backend Golang Developer (фриланс)</h3>
+              <div class="muted">Проект: мониторинг Яндекс Маркета</div>
+            </div>
+            <ul class="list">
+              <li>Сервис мониторинга: цены/новые товары, сравнение изменений, история.</li>
+              <li>Уведомления через Telegram-бота.</li>
+              <li>Автоматизация процесса без ручного участия.</li>
+            </ul>
+            <div class="pillrow">
+              <span class="pill">Go</span><span class="pill">HTTP</span><span class="pill">Telegram</span>
+            </div>
+          </article>
+
+          <article class="timeline__item card">
+            <div class="timeline__top">
+              <h3>Инженер по автоматизации (ГПХ) — Мосэнерго</h3>
+              <div class="muted">Excel → R7 Office • требования • ТЗ</div>
+            </div>
+            <ul class="list">
+              <li>Миграция процессов с Excel на R7 Office.</li>
+              <li>Макросы и JS-скрипты, консультации и обучение пользователей.</li>
+              <li>Сбор требований и подготовка ТЗ по ГОСТ.</li>
+            </ul>
+            <div class="pillrow">
+              <span class="pill">JS</span><span class="pill">Automation</span><span class="pill">Docs</span>
+            </div>
+          </article>
+
+          <article class="timeline__item card">
+            <div class="timeline__top">
+              <h3>Системный инженер (ГПХ) — Мосэнерго</h3>
+              <div class="muted">Windows → RedOS</div>
+            </div>
+            <ul class="list">
+              <li>Перевод рабочих мест с Windows на RedOS: установка, настройка, сопровождение.</li>
+            </ul>
+            <div class="pillrow">
+              <span class="pill">Linux</span><span class="pill">RedOS</span>
+            </div>
+          </article>
+
+          <article class="timeline__item card">
+            <div class="timeline__top">
+              <h3>iOS Developer</h3>
+              <div class="muted">MAX VPN</div>
+            </div>
+            <ul class="list">
+              <li>Paywall, UI-логика, жесты, экраны выбора стран/серверов.</li>
+            </ul>
+            <div class="pillrow">
+              <span class="pill">Swift</span><span class="pill">UIKit</span>
+            </div>
+          </article>
+
+          <article class="timeline__item card">
+            <div class="timeline__top">
+              <h3>Backend Golang Developer — стартап</h3>
+              <div class="muted">QR-лояльность для кофеен</div>
+            </div>
+            <ul class="list">
+              <li>Бизнес-логика начислений (5 покупок → бонус), QR-подтверждение сотрудником.</li>
+            </ul>
+            <div class="pillrow">
+              <span class="pill">Go</span><span class="pill">QR</span><span class="pill">Backend logic</span>
+            </div>
+          </article>
+
+          <article class="timeline__item card">
+            <div class="timeline__top">
+              <h3>1C / CRM Automation Engineer</h3>
+              <div class="muted">Автоматизация CRM/ERP для квестов</div>
+            </div>
+            <ul class="list">
+              <li>Конфигурация 1С + интеграции с агрегаторами: синхронизация заказов и данных.</li>
+              <li>Снижение ручного труда и ошибок, ускорение обработки.</li>
+            </ul>
+            <div class="pillrow">
+              <span class="pill">1C</span><span class="pill">Integrations</span><span class="pill">Automation</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Проекты</h2>
+          <p>
+            Ниже — избранные проекты. Список может подгружаться автоматически из GitHub.
+          </p>
+        </div>
+
+        <div class="projects__controls">
+          <div class="search">
+            <label class="sr" for="projectSearch">Поиск по проектам</label>
+            <input id="projectSearch" type="search" placeholder="Например: parser, crm, telegram, go..." autocomplete="off" />
+          </div>
+          <div class="row">
+            <button class="btn btn--ghost" id="loadGithub" type="button">Подгрузить с GitHub</button>
+            <a class="btn btn--ghost" href="https://github.com/AntonShishikin?tab=repositories" target="_blank" rel="noreferrer">Все репозитории ↗</a>
+          </div>
+        </div>
+
+        <div class="grid grid--3" id="projectsGrid" aria-live="polite">
+          <!-- Стартовые карточки (можешь заменить под себя) -->
+          <article class="card project" data-tags="go telegram parser market">
+            <h3>Мониторинг Яндекс Маркета</h3>
+            <p>Сервис мониторинга цен/товаров + уведомления в Telegram, история изменений.</p>
+            <div class="pillrow">
+              <span class="pill">Go</span><span class="pill">HTTP</span><span class="pill">Telegram</span>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="1c crm erp integration">
+            <h3>CRM/ERP автоматизация (1С)</h3>
+            <p>Интеграции с агрегаторами, синхронизация заказов, снижение ручного труда.</p>
+            <div class="pillrow">
+              <span class="pill">1C</span><span class="pill">Integrations</span><span class="pill">Automation</span>
+            </div>
+          </article>
+
+          <article class="card project" data-tags="go qr loyalty backend">
+            <h3>QR-лояльность для кофеен</h3>
+            <p>Backend-логика начислений и подтверждение бонусов через QR-коды.</p>
+            <div class="pillrow">
+              <span class="pill">Go</span><span class="pill">QR</span><span class="pill">Business logic</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="muted small">
+          Подсказка: добавь README к ключевым репозиториям — это сильно повышает конверсию в собес.
+        </p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Образование</h2>
+          <p>Коротко и по делу.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>РТУ МИРЭА</h3>
+            <p class="muted">Программная инженерия • кафедра Корпоративных информационных систем</p>
+            <ul class="list">
+              <li>Последний курс бакалавриата</li>
+              <li>Опыт проектной работы: документация, требования, разработка</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Направление развития</h3>
+            <ul class="list">
+              <li>Backend Go • microservices</li>
+              <li>SQL/DB design</li>
+              <li>Observability, reliability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Контакты</h2>
+          <p>Самый быстрый способ связаться — Telegram или email.</p>
+        </div>
+
+        <div class="grid grid--2">
+          <div class="card">
+            <h3>Написать мне</h3>
+
+            <!-- TODO: замени на свои реальные контакты -->
+            <div class="contact__links">
+              <a class="contact__link" href="mailto:you@example.com">
+                <span class="contact__k">Email</span>
+                <span class="contact__v">you@example.com</span>
+              </a>
+              <a class="contact__link" href="https://t.me/USERNAME" target="_blank" rel="noreferrer">
+                <span class="contact__k">Telegram</span>
+                <span class="contact__v">@USERNAME</span>
+              </a>
+              <a class="contact__link" href="https://github.com/AntonShishikin" target="_blank" rel="noreferrer">
+                <span class="contact__k">GitHub</span>
+                <span class="contact__v">AntonShishikin</span>
+              </a>
+            </div>
+
+            <p class="muted small">
+              Если хочешь — добавь сюда кнопку “Скачать PDF резюме” (ссылка на файл в репозитории).
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Открыт к</h3>
+            <ul class="list">
+              <li>Backend стажировка / Junior</li>
+              <li>Проектам с интеграциями, автоматизацией, API</li>
+              <li>Командам, где есть менторство и рост</li>
+            </ul>
+
+            <div class="callout">
+              <div class="callout__title">Супер-быстрая версия</div>
+              <p class="callout__text">
+                Go • REST • PostgreSQL • парсинг • интеграции • 1С • документация
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <p class="muted small">
+            © <span id="year"></span> Антон Шишикин • Сделано на GitHub Pages
+          </p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
