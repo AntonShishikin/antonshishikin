@@ -86,6 +86,7 @@ h3{ font-size: 18px; }
   justify-content: space-between;
   gap: 14px;
   padding: 14px 0;
+  flex-wrap: wrap;
 }
 
 .brand{
@@ -124,7 +125,12 @@ h3{ font-size: 18px; }
   text-decoration:none;
 }
 
-.topbar__actions{ display:flex; gap: 10px; align-items:center; }
+.topbar__actions{
+  display:flex;
+  gap: 10px;
+  align-items:center;
+  flex-wrap: wrap;
+}
 
 .btn{
   display:inline-flex;
@@ -253,9 +259,21 @@ h3{ font-size: 18px; }
 }
 
 .kv{ display:grid; gap: 10px; }
-.kv__row{ display:flex; justify-content: space-between; gap: 10px; }
+.kv__row{
+  display:flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items:center;
+}
 .kv__k{ color: var(--faint); font-size: 12px; }
-.kv__v{ color: var(--text); font-weight: 700; font-size: 13px; }
+.kv__v{
+  color: var(--text);
+  font-weight: 700;
+  font-size: 13px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
 
 .profile__actions{
   display:grid;
@@ -343,9 +361,16 @@ h3{ font-size: 18px; }
   border-radius: 14px;
   border: 1px solid var(--line);
   background: rgba(255,255,255,.03);
+  flex-wrap: wrap;
+  align-items:center;
 }
 .contact__k{ color: var(--faint); font-size: 12px; }
-.contact__v{ font-weight: 800; font-size: 13px; }
+.contact__v{
+  font-weight: 800;
+  font-size: 13px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
 
 .callout{
   margin-top: 14px;
@@ -360,6 +385,26 @@ h3{ font-size: 18px; }
 .footer{ margin-top: 18px; text-align:center; }
 
 /* Responsive */
+@media (max-width: 640px){
+  .topbar__inner{
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .topbar__actions{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .topbar__actions .btn{
+    flex: 1 1 140px;
+  }
+  .kv__row,
+  .contact__link{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
 @media (min-width: 860px){
   .nav{ display:flex; }
   .hero__grid{ grid-template-columns: 1.4fr .8fr; align-items:start; }
