@@ -35,8 +35,8 @@
         "Антон Шишикин — Junior Backend (Golang)",
         "Москва",
         "GitHub: https://github.com/AntonShishikin",
-        "Telegram: @USERNAME",
-        "Email: you@example.com",
+        "Telegram: @zxc666hopeless",
+        "Email: antonsh154@gmail.com",
       ].join("\n");
 
       try {
